@@ -23,6 +23,7 @@ LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 
 #include "peripheral_status.h"
 
+LV_IMG_DECLARE(a_morrigan);
 LV_IMG_DECLARE(hammerbeam1);
 LV_IMG_DECLARE(hammerbeam2);
 LV_IMG_DECLARE(hammerbeam3);
@@ -55,6 +56,7 @@ LV_IMG_DECLARE(hammerbeam29);
 LV_IMG_DECLARE(hammerbeam30);
 
 const lv_img_dsc_t *anim_imgs[] = {
+    &a_morrigan,
     &hammerbeam1,
     &hammerbeam2,
     &hammerbeam3,
@@ -85,6 +87,7 @@ const lv_img_dsc_t *anim_imgs[] = {
     &hammerbeam28,
     &hammerbeam29,
     &hammerbeam30,
+    &a_morrigan,  // see if tacking one (technically unused) image at the end fixes the display going blank/corrupted
 };
 
 
